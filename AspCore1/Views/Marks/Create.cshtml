@@ -1,0 +1,123 @@
+﻿@model Marks
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h2 class="text-uppercase text-center">Create Student Marks</h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12 border-1 border">
+            <form method="post" enctype="multipart/form-data">
+                <div class="mb-3">
+                    <label asp-for="@Model.MarkID" class="form-label"></label>
+                    <input asp-for="@Model.MarkID" class="form-control" />
+                    <span asp-validation-for="@Model.MarkID" class="text-danger"></span>
+                </div>
+                <div class="mb-3">
+                    <label asp-for="@Model.StudentID" class="form-label"></label>
+                    <input asp-for="@Model.StudentID" class="form-control" />
+                    <span asp-validation-for="@Model.StudentID" class="text-danger"></span>
+                </div>
+                <div class="mb-3">
+                    <label asp-for="@Model.SubjectID_1" class="form-label"></label>
+                    <input asp-for="@Model.SubjectID_1" class="form-control" />
+                    <span asp-validation-for="@Model.SubjectID_1" class="text-danger"></span>
+                </div>
+                <div class="mb-3">
+                    <label asp-for="@Model.SubjectName_1" class="form-label"></label>
+                    <input asp-for="@Model.SubjectName_1" class="form-control" />
+                    <span asp-validation-for="@Model.SubjectName_1" class="text-danger"></span>
+                </div>
+                <div class="mb-3">
+                    <label asp-for="@Model.Subject_1_Mark" class="form-label"></label>
+                    <input asp-for="@Model.Subject_1_Mark" class="form-control" />
+                    <span asp-validation-for="@Model.Subject_1_Mark" class="text-danger"></span>
+                </div>
+                <div class="mb-3">
+                    <label asp-for="@Model.SubjectID_2" class="form-label"></label>
+                    <input asp-for="@Model.SubjectID_2" class="form-control" />
+                    <span asp-validation-for="@Model.SubjectID_2" class="text-danger"></span>
+                </div>
+                <div class="mb-3">
+                    <label asp-for="@Model.SubjectName_2" class="form-label"></label>
+                    <input asp-for="@Model.SubjectName_2" class="form-control" />
+                    <span asp-validation-for="@Model.SubjectName_2" class="text-danger"></span>
+                </div>
+                <div class="mb-3">
+                    <label asp-for="@Model.Subject_2_Mark" class="form-label"></label>
+                    <input asp-for="@Model.Subject_2_Mark" class="form-control" />
+                    <span asp-validation-for="@Model.Subject_2_Mark" class="text-danger"></span>
+                </div>
+                <div class="mb-3">
+                    <label asp-for="@Model.SubjectID_3" class="form-label"></label>
+                    <input asp-for="@Model.SubjectID_3" class="form-control" />
+                    <span asp-validation-for="@Model.SubjectID_3" class="text-danger"></span>
+                </div>
+                <div class="mb-3">
+                    <label asp-for="@Model.SubjectName_3" class="form-label"></label>
+                    <input asp-for="@Model.SubjectName_3" class="form-control" />
+                    <span asp-validation-for="@Model.SubjectName_3" class="text-danger"></span>
+                </div>
+                <div class="mb-3">
+                    <label asp-for="@Model.Subject_3_Mark" class="form-label"></label>
+                    <input asp-for="@Model.Subject_3_Mark" class="form-control" />
+                    <span asp-validation-for="@Model.Subject_3_Mark" class="text-danger"></span>
+                </div>
+                <div class="mb-3">
+                    <label asp-for="@Model.SubjectID_4" class="form-label"></label>
+                    <input asp-for="@Model.SubjectID_4" class="form-control" />
+                    <span asp-validation-for="@Model.SubjectID_4" class="text-danger"></span>
+                </div>
+                <div class="mb-3">
+                    <label asp-for="@Model.SubjectName_4" class="form-label"></label>
+                    <input asp-for="@Model.SubjectName_4" class="form-control" />
+                    <span asp-validation-for="@Model.SubjectName_4" class="text-danger"></span>
+                </div>
+                <div class="mb-3">
+                    <label asp-for="@Model.Subject_4_Mark" class="form-label"></label>
+                    <input asp-for="@Model.Subject_4_Mark" class="form-control" />
+                    <span asp-validation-for="@Model.Subject_4_Mark" class="text-danger"></span>
+                </div>
+                <div class="mb-3">
+                    <label asp-for="@Model.SubjectID_5" class="form-label"></label>
+                    <input asp-for="@Model.SubjectID_5" class="form-control" />
+                    <span asp-validation-for="@Model.SubjectID_5" class="text-danger"></span>
+                </div>
+                <div class="mb-3">
+                    <label asp-for="@Model.SubjectName_5" class="form-label"></label>
+                    <input asp-for="@Model.SubjectName_5" class="form-control" />
+                    <span asp-validation-for="@Model.SubjectName_5" class="text-danger"></span>
+                </div>
+                <div class="mb-3">
+                    <label asp-for="@Model.Subject_5_Mark" class="form-label"></label>
+                    <input asp-for="@Model.Subject_5_Mark" class="form-control" />
+                    <span asp-validation-for="@Model.Subject_5_Mark" class="text-danger"></span>
+                </div>
+                <div class="mb-3">
+                    <label asp-for="@Model.SubjectID_6" class="form-label"></label>
+                    <input asp-for="@Model.SubjectID_6" class="form-control" />
+                    <span asp-validation-for="@Model.SubjectID_6" class="text-danger"></span>
+                </div>
+                <div class="mb-3">
+                    <label asp-for="@Model.SubjectName_6" class="form-label"></label>
+                    <input asp-for="@Model.SubjectName_6" class="form-control" />
+                    <span asp-validation-for="@Model.SubjectName_6" class="text-danger"></span>
+                </div>
+                <div class="mb-3">
+                    <label asp-for="@Model.Subject_6_Mark" class="form-label"></label>
+                    <input asp-for="@Model.Subject_6_Mark" class="form-control" />
+                    <span asp-validation-for="@Model.Subject_6_Mark" class="text-danger"></span>
+                </div>
+                <div class="mb-3">
+                    <a asp-controller="Marks" asp-action="Index" class="btn btn-danger">Back</a>
+                    <button type="submit" class="btn btn-success">Create</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

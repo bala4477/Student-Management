@@ -1,0 +1,88 @@
+﻿@model Marks
+
+<div class="container">
+    <div class="card">
+        <div class="card-header text-center text-uppercase">
+            Student Mark Details
+        </div>
+        <div class="card-body">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="row mb-4">
+                        <div class="col-md-4">
+                            <p class="card-text text-uppercase"><strong>@Model.SubjectName_1</strong></p>
+                        </div>
+                        <div class="col-md-8">
+                            <p class="card-text">: @Model.Subject_1_Mark</p>
+                        </div>
+                    </div>
+                    <div class="row mb-4">
+                        <div class="col-md-4">
+                            <p class="card-text text-uppercase"><strong>@Model.SubjectName_2</strong></p>
+                        </div>
+                        <div class="col-md-8">
+                            <p class="card-text">: @Model.Subject_2_Mark</p>
+                        </div>
+                    </div>
+                    <div class="row mb-4">
+                        <div class="col-md-4">
+                            <p class="card-text text-uppercase"><strong>@Model.SubjectName_3</strong></p>
+                        </div>
+                        <div class="col-md-8">
+                            <p class="card-text">: @Model.Subject_3_Mark</p>
+                        </div>
+                    </div>
+                    <div class="row mb-4">
+                        <div class="col-md-4">
+                            <p class="card-text text-uppercase"><strong>@Model.SubjectName_4</strong></p>
+                        </div>
+                        <div class="col-md-8">
+                            <p class="card-text">: @Model.Subject_4_Mark</p>
+                        </div>
+                    </div>
+                    <div class="row mb-4">
+                        <div class="col-md-4">
+                            <p class="card-text text-uppercase"><strong>@Model.SubjectName_5</strong></p>
+                        </div>
+                        <div class="col-md-8">
+                            <p class="card-text">: @Model.Subject_5_Mark</p>
+                        </div>
+                    </div>
+                    <div class="row mb-4">
+                        <div class="col-md-4">
+                            <p class="card-text text-uppercase"><strong>@Model.SubjectName_6</strong></p>
+                        </div>
+                        <div class="col-md-8">
+                            <p class="card-text">: @Model.Subject_6_Mark</p>
+                        </div>
+                    </div>
+                    <div class="row mb-4">
+                        <div class="col-md-4">
+                            <p class="card-text text-uppercase"><strong>Total</strong></p>
+                        </div>
+                        <div class="col-md-8">
+                            <p class="card-text">: @Model.Total</p>
+                        </div>
+                    </div>
+                    <div class="row mb-4">
+                        <div class="col-md-4">
+                            <p class="card-text text-uppercase"><strong>Rank</strong></p>
+                        </div>
+                        <div class="col-md-8">
+                            <p class="card-text">: @Model.Rank</p>
+                        </div>
+                    </div>
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <a asp-controller="Marks" asp-action="Index" class="btn btn-danger">Back</a>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

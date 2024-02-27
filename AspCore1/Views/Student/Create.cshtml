@@ -1,0 +1,62 @@
+﻿@model Student
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h2 class="text-uppercase text-center">Create Student</h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12 border-1 border">
+            <form method="post" enctype="multipart/form-data">
+                <div class="mb-3">
+                    <label asp-for="@Model.DepartmentId" class="form-label"></label>
+                    <input asp-for="@Model.DepartmentId" class="form-control" />
+                    <span asp-validation-for="@Model.DepartmentId" class="text-danger"></span>
+                </div>
+                <div class="mb-3">
+                    <label asp-for="@Model.StudentId" class="form-label"></label>
+                    <input asp-for="@Model.StudentId" class="form-control" />
+                    <span asp-validation-for="@Model.StudentId" class="text-danger"></span>
+                </div>
+                <div class="mb-3">
+                    <label asp-for="@Model.StudentName" class="form-label"></label>
+                    <input asp-for="@Model.StudentName" class="form-control" />
+                    <span asp-validation-for="@Model.StudentName" class="text-danger"></span>
+                </div>
+                <div class="mb-3">
+                    <label asp-for="@Model.StudentEmail" class="form-label"></label>
+                    <input asp-for="@Model.StudentEmail" class="form-control" />
+                    <span asp-validation-for="@Model.StudentEmail" class="text-danger"></span>
+                </div>
+                <div class="mb-3">
+                    <label asp-for="@Model.StudentPhone" class="form-label"></label>
+                    <input asp-for="@Model.StudentPhone" class="form-control" />
+                    <span asp-validation-for="@Model.StudentPhone" class="text-danger"></span>
+                </div>
+                <div class="mb-3">
+                    <label asp-for="@Model.DateOfBirth" class="form-label"></label>
+                    <input asp-for="@Model.DateOfBirth" class="form-control" />
+                    <span asp-validation-for="@Model.DateOfBirth" class="text-danger"></span>
+                </div>
+                <div class="mb-3">
+                    <label asp-for="@Model.Gender" class="form-label"></label>
+                    <input asp-for="@Model.Gender" class="form-control" />
+                    <span asp-validation-for="@Model.Gender" class="text-danger"></span>
+                </div>
+                <div class="mb-3">
+                    <label asp-for="@Model.StudentPhoto" class="form-label"></label>
+                    <input type="file" name="files" id="uploadBox" class="form-control" />
+                </div>
+                <div class="mb-3">
+                    <a asp-controller="Student" asp-action="Index" class="btn btn-danger">Back</a>
+                    <button type="submit" class="btn btn-success">Create</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

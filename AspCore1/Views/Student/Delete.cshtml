@@ -1,0 +1,63 @@
+﻿@model Student
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h2 class="text-uppercase text-center">Delete Student Details</h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-8 border-1 border">
+            <form method="post" enctype="multipart/form-data">
+                <input asp-for="@Model.StudentPhoto" hidden />
+                <input asp-for="@Model.StudentId" hidden />
+                <div class="mb-3">
+                    <label asp-for="@Model.DepartmentId" class="form-label"></label>
+                    <input asp-for="@Model.DepartmentId" class="form-control" disabled />
+                </div>
+                <div class="mb-3">
+                    <label asp-for="@Model.StudentId" class="form-label"></label>
+                    <input asp-for="@Model.StudentId" class="form-control" disabled />
+                </div>
+                <div class="mb-3">
+                    <label asp-for="@Model.StudentName" class="form-label"></label>
+                    <input asp-for="@Model.StudentName" class="form-control" disabled />
+                </div>
+                <div class="mb-3">
+                    <label asp-for="@Model.StudentEmail" class="form-label"></label>
+                    <input asp-for="@Model.StudentEmail" class="form-control" disabled />
+                </div>
+                <div class="mb-3">
+                    <label asp-for="@Model.StudentPhone" class="form-label"></label>
+                    <input asp-for="@Model.StudentPhone" class="form-control" disabled />
+                </div>
+                <div class="mb-3">
+                    <label asp-for="@Model.DateOfBirth" class="form-label"></label>
+                    <input asp-for="@Model.DateOfBirth" class="form-control" disabled />
+                </div>
+                <div class="mb-3">
+                    <label asp-for="@Model.Gender" class="form-label"></label>
+                    <input asp-for="@Model.Gender" class="form-control" disabled />
+                </div>
+                <div class="mb-3">
+                    <label asp-for="@Model.StudentPhoto" class="form-label"></label>
+                    <input type="file" name="files" id="uploadBox" class="form-control" disabled />
+                </div>
+                <div class="mb-3">
+                    <a asp-controller="Student" asp-action="Index" class="btn btn-warning">Back</a>
+                    <button type="submit" class="btn btn-danger">Delete</button>
+                </div>
+            </form>
+        </div>
+        <div class="col-md-4">
+            @if (Model.StudentPhoto != null)
+            {
+                <img src="@Model.StudentPhoto" width="100%" />
+            }
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
